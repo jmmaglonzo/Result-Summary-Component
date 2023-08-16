@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(221, 100%, 96%);
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 60rem;
+  background-color: hsl(221, 100%, 96%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.32);
+}
+.container .result {
+  overflow: hidden;
+  border-end-end-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.container .result .y-result {
+  color: hsla(241, 100%, 89%, 0.9);
+  margin-bottom: 2.5rem;
+}
+.container .result .circle {
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom, hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+}
+.container .result .circle .big-number {
+  font-size: 5rem;
+}
+.container .result .content {
+  margin-top: 2rem;
+}
+.container .result .content .c-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.container .result .content .desc {
+  color: hsla(241, 100%, 89%, 0.9);
+}
+.container .title {
+  font-size: 2rem;
+}
+.container .summary {
+  padding: 1rem;
+}
+.container .summary .t-summary {
+  color: hsl(224, 30%, 27%);
+}
+.container .summary .senses {
+  gap: 2.5rem;
+  padding: 2rem;
+}
+.container .summary .senses .sense-bg1 {
+  display: flex;
+  align-items: center;
+  background-color: blue;
+  width: 100%;
+  padding: 1rem 0;
+}

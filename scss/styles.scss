@@ -1,0 +1,84 @@
+@import "configs";
+@import "colorVariables";
+
+.container {
+  width: 100%;
+  max-width: 60rem;
+  background-color: $paleblue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.32);
+
+  .result {
+    overflow: hidden;
+    border-end-end-radius: 20px;
+    @include flexCenter(column);
+    background: linear-gradient(
+      to bottom,
+      $lightslatebluebackground,
+      $lightroyalbluebackground
+    );
+    padding: 4rem 2rem;
+    text-align: center;
+
+    .y-result {
+      color: $lightlavender;
+      margin-bottom: 2.5rem;
+    }
+
+    .circle {
+      height: 15rem;
+      width: 15rem;
+      @include flexCenter(column);
+      background: linear-gradient(
+        to bottom,
+        $violetbluecircle,
+        $persianbluecircle
+      );
+      border-radius: 50%;
+      color: $white;
+      .big-number {
+        font-size: 5rem;
+      }
+    }
+
+    .content {
+      margin-top: 2rem;
+      .c-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 1rem;
+      }
+      .desc {
+        color: $lightlavender;
+      }
+    }
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .summary {
+    padding: 1rem;
+    .t-summary {
+      color: $darkgrayblue;
+    }
+
+    .senses {
+      gap: 2.5rem;
+      padding: 2rem;
+
+      .sense-bg1 {
+        display: flex;
+        align-items: center;
+        background-color: blue;
+        width: 100%;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
