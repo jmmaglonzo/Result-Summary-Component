@@ -14,7 +14,7 @@
   .result {
     flex: 50%;
     overflow: hidden;
-    border-end-end-radius: 20px;
+    border-radius: 20px;
     @include flexCenter(column);
     background: linear-gradient(
       to bottom,
